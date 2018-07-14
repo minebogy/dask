@@ -4,5 +4,7 @@ these commands suffice::
 
   git clone git@github.com:dask/dask.git
   cd dask/docs
+  conda create -n daskdocs --file requirements-docs.txt
+  conda activate daskdocs
   make html
   open build/html/index.html
